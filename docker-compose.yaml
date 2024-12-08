@@ -9,7 +9,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Centrals
+      - TZ=America/Chicago
       - SERVERURL=${WIREGUARD_HOST_IP} #optional
       - SERVERPORT=51820 #optional
       - PEERS=3 #optional
