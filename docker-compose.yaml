@@ -26,5 +26,12 @@ services:
     sysctls:
       - net.ipv4.conf.all.src_valid_mark=1
     restart: unless-stopped
+    networks:
+      main:
 volumes:
     config: 
+networks:
+  main:
+    driver: bridge
+    driver_opts:
+      gateway: 192.168.2.1 # set the gateway for when multiple interfaces are used. Fixes routing when on LAN 
