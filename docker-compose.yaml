@@ -19,7 +19,7 @@ services:
       - ALLOWEDIPS=0.0.0.0/0 #optional
     volumes:
       - ./data/config:/config
-      - /lib/modules:/lib/modules
+      # - /lib/modules:/lib/modules
     ports:
       - 51820:51820/udp
     privileged: true 
