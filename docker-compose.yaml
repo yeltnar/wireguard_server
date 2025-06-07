@@ -31,5 +31,5 @@ services:
 networks:
   main:
     driver: bridge
-    gateway: 192.168.2.1 # set the gateway for when multiple interfaces are used. Fixes routing when on LAN 
+    # gateway: 192.168.2.1 # set the gateway for when multiple interfaces are used. Fixes routing when on LAN 
 
